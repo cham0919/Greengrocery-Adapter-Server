@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script type="text/javascript" src="js/greengrocery.js"></script>
+    <title>청과물 가격 조회 페이지</title>
+</head>
+<body>
+<select onchange="visible(this.value)" id="kind">
+    <option value="FRUIT">과일</option>
+    <option value="VEGETABLE">야채</option>
+</select>
+<span id="list"></span> <br/>
+<input type="text" id="name"/> <br/>
+<span style="color: red" id="warning"></span> <br/>
+<button onclick="fetchPrice()">조회</button> <br/>
+<span id="price"></span>
+</body>
+</html>
