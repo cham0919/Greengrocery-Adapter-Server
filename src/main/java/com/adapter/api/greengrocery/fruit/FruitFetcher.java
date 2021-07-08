@@ -100,8 +100,8 @@ public class FruitFetcher implements GreengroceryFetcher {
     }
 
     private String getAccessToken() throws IOException {
-        String token = AccessToken.getVegetableAccessToken();
-        if (AccessToken.getVegetableAccessToken() == null) {
+        String token = AccessToken.getFruitAccessToken();
+        if (AccessToken.getFruitAccessToken() == null) {
             token = tokenFetcher.fetch();
         }
         return token;
