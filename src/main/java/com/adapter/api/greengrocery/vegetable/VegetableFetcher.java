@@ -89,7 +89,7 @@ public class VegetableFetcher implements GreengroceryFetcher {
     private HttpResponse fetchVegetableList() throws IOException{
         return HttpRequest.of()
                 .get(createVegetableListURI())
-                .addHeader(HttpHeaders.AUTHORIZATION, AccessToken.getVegetableAccessToken())
+                .addHeader(HttpHeaders.AUTHORIZATION, getAccessToken())
                 .execute();
     }
 
