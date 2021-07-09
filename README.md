@@ -13,7 +13,35 @@
 
 <br/><br/>
 
-## 기능
+## API DOC
+
+ ### 1. 리스트 조회
+ 
+ - url : ```/greengrocery```
+ - http method : ```GET```
+
+<br/>
+ 
+ ### 2. 가격 조회
+ 
+
+ #### 과일 조회
+ 
+ - url : ```/greengrocery/fruit```
+ - http method : ```GET```
+ - param : ```name```  
+
+<br/>
+
+  #### 야채 조회
+ 
+ - url : ```/greengrocery/vegetable```
+ - http method : ```GET```
+ - param : ```name```
+
+<br/><br/>
+
+## 기능 구현
 
 
  
