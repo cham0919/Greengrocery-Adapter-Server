@@ -38,14 +38,14 @@ function visible(v) {
 }
 
 function fetchPrice(){
-    let name = document.getElementById( 'name' ).value;
+    let name = document.getElementById( 'name' ).value.trim();
     let kindDOM = document.getElementById( 'kind' );
     let kind = kindDOM.options[kindDOM.selectedIndex].value
     let price = document.getElementById( 'price' );
     let warning = document.getElementById( 'warning' );
 
     let data = { name : name }
-    if (name.trim() === "") {
+    if (name === "") {
         warning.innerText = "이름을 적어주세요";
         price.innerText = "";
         return
