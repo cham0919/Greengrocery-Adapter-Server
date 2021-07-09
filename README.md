@@ -11,6 +11,15 @@
  ![image](https://user-images.githubusercontent.com/61372486/125101780-8fea6c80-e115-11eb-9685-52efa806d81a.png)
 
 
+
+<br/><br/>
+
+## 사용 기술
+
+ - Spring Boot v.2.5.2
+ - JDK v.1.8
+
+
 <br/><br/>
 
 ## API DOC
