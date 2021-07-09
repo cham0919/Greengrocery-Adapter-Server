@@ -105,6 +105,7 @@ public class VegetableFetcher implements GreengroceryFetcher {
         String token = AccessToken.getVegetableAccessToken();
         if (AccessToken.getVegetableAccessToken() == null) {
             token = tokenFetcher.fetch();
+            AccessToken.setVegetableAccessToken(token);
         }
         return token;
     }

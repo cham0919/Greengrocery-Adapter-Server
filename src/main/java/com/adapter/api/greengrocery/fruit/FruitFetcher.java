@@ -103,6 +103,7 @@ public class FruitFetcher implements GreengroceryFetcher {
         String token = AccessToken.getFruitAccessToken();
         if (AccessToken.getFruitAccessToken() == null) {
             token = tokenFetcher.fetch();
+            AccessToken.setFruitAccessToken(token);
         }
         return token;
     }
