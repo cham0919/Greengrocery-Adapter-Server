@@ -15,11 +15,6 @@ import java.io.IOException;
 @RestControllerAdvice
 public class GreengroceryAdvice {
 
-    private final Gson gson = new GsonBuilder().setPrettyPrinting()
-            .disableHtmlEscaping()
-            .setDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSSZ")
-            .create();
-
     @ExceptionHandler(IOException.class)
     public ResponseEntity<String> IOException(IOException e) {
         log.error(e.getMessage(), e);

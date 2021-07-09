@@ -2,14 +2,14 @@ package com.adapter.api.token;
 
 import com.adapter.api.lang.Initializable;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 
 import java.lang.reflect.Method;
 import java.util.ArrayList;
 import java.util.List;
 
 @Slf4j
-@Component
+@Service
 public class AccessTokenInitializer implements Initializable {
 
     private final List<AccessTokenFetcher> fetcherList = new ArrayList<>();
@@ -34,7 +34,7 @@ public class AccessTokenInitializer implements Initializable {
         }
     }
 
-    private void setAccessToken(AccessTokenFetcher tokenFetcher, String accessToken) throws Throwable, IllegalAccessException {
+    private void setAccessToken(AccessTokenFetcher tokenFetcher, String accessToken) throws Throwable {
         String fetchClazzName = tokenFetcher.getClass().getSimpleName();
         String tokenParamName = fetchClazzName.replace("Fetcher", "");
         Method setMethod = AccessToken.class.getMethod("set" + tokenParamName, String.class);
