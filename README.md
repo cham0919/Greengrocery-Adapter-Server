@@ -18,7 +18,7 @@
 
  - Spring Boot v.2.5.2
  - JDK v.1.8
- - gradle 
+ - gradle v.7.0.2 
 
 <br/><br/>
 
